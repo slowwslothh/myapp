@@ -1,7 +1,5 @@
 - name: install dep
   shell: npm install --save --legacy-peer-deps
-- name: Non-Zero return
-  shell: “ls | grep wp-config.php”
-  ignore_errors: true
 - name: build app
   shell: ng build --prod
+  ignore_errors: true
