@@ -7,5 +7,5 @@
     password: 181JMT2775
     
 - name: Push the Docker image into the repo
-  shell: docker push devops:latest
+  shell: docker push slowwsloth/devops:latest
       
