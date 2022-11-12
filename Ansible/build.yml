@@ -2,6 +2,5 @@
 - hosts: localhost
   gather_facts: true
   become: true
-  remote_user: zied
   roles:
     - { role: build }
