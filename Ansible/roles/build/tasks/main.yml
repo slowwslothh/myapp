@@ -1,4 +1,8 @@
 - name: install dep
   shell: npm install --save --legacy-peer-deps
+- name: Non-Zero return
+  shell: “ls | grep wp-config.php”
+  register: wp
+  failed_when: “wp.rc not in [ 0, 1 ]”
 - name: build app
   shell: ng build --prod
